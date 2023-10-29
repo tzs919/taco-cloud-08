@@ -14,8 +14,15 @@ taco:
 
   discount:
     codes:
-      abcdef: 10
+      - abcdef1: 10
+      - abcdef2: 11
+      - abcdef3: 12
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 ---
 spring:
   profiles: prod
